@@ -23,7 +23,8 @@ CREATE TABLE IF NOT EXISTS Subject (
 
 CREATE TABLE IF NOT EXISTS Payment (
     payment_id BIGSERIAL NOT NULL PRIMARY KEY,
-    student INT REFERENCES Student (student_id)
+    student INT REFERENCES Student (student_id),
+    date DATE NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Schedule (
